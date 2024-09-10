@@ -1,0 +1,17 @@
+syntax = "proto3";
+package throughput.throughput;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+import "throughput/throughput/params.proto";
+
+option go_package = "throughput/x/throughput/types";
+
+// GenesisState defines the throughput module's genesis state.
+message GenesisState {
+  // params defines all the parameters of the module.
+  Params params = 1 [
+    (gogoproto.nullable) = false,
+    (amino.dont_omitempty) = true
+  ];
+}

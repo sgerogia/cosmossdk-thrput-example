@@ -1,0 +1,15 @@
+syntax = "proto3";
+package throughput.throughput;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "throughput/x/throughput/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "throughput/x/throughput/Params";
+  option (gogoproto.equal) = true;
+
+  
+}

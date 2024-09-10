@@ -1,0 +1,16 @@
+# IDE & OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Binaries
+release/
+build/
+
+# Front=end & logs
+vue/node_modules
+vue/dist
+*.dot
+*.log
+
+
